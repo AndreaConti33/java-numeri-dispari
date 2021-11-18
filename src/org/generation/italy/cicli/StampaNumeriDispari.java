@@ -20,14 +20,15 @@ public class StampaNumeriDispari {
 		int pari = 0;
 		int somma = 0;
 		
+		//Ciclo
 		for(int i = 0; i < n.length; i++) {
 			n[i] = rd.nextInt(99-0) + 0;
 			if((n[i] > 10 ) && (n[i] < 50)) {
-				somma = somma + n[i]; //dispari++
+				somma = somma + n[i]; 
 			}
 			if(n[i] % 2 == 1) {
 			System.out.println(n[i]);
-			dispari = dispari +1;
+			dispari = dispari +1; //dispari++
 			} else if (n[i] % 2 == 0) {
 			//	System.out.println(n[i]); per verifica dei numeri compresi tra 10 e 50
 				pari = pari +1; //pari++
