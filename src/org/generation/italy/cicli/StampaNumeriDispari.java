@@ -36,9 +36,9 @@ public class StampaNumeriDispari {
 		}
 		
 		//Stampa finale
-		System.out.println("I numeri dispari trovati sono: " + dispari);
-		System.out.println("I numeri pari trovati sono: " + pari);
-		System.out.println("La somma dei numeri compresi tra 10 e 50 è: " + somma);
+		System.out.println("I numeri dispari trovati sono: " + dispari + "\n" + "I numeri pari trovati sono: " + pari + "\n" + "La somma dei numeri compresi tra 10 e 50 è: " + somma);
+		System.out.println();
+		System.out.println();
 
 		//Closing scanner
 		scanner.close();		                
