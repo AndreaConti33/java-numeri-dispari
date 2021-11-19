@@ -22,18 +22,18 @@ public class StampaNumeriDispari {
 		
 		//Ciclo
 		for(int i = 0; i < n.length; i++) {
-			n[i] = rd.nextInt(99-0) + 0;
+			n[i] = rd.nextInt(100);
 			if((n[i] > 10 ) && (n[i] < 50)) {
 				somma = somma + n[i]; 
 			}
-			if(n[i] % 2 == 1) {
+			if(n[i] % 2 != 1) { //Resto diverso da uno
 			System.out.println(n[i]);
 			dispari = dispari +1; //dispari++
-			} else if (n[i] % 2 == 0) {
+			} else if (n[i] % 2 == 0) { //Resto uguale a 0
 			//	System.out.println(n[i]); per verifica dei numeri compresi tra 10 e 50
 				pari = pari +1; //pari++
 			}
-		}
+		}	
 		
 		//Stampa finale
 		System.out.println("I numeri dispari trovati sono: " + dispari + "\n" + "I numeri pari trovati sono: " + pari + "\n" + "La somma dei numeri compresi tra 10 e 50 è: " + somma);
